@@ -9,25 +9,44 @@
 </head>
 <body>
 <div class="container">
-<h1 class="center"> Alura Typer </h1>
-<p class="frase left-align">O Tribunal Superior Eleitoral (TSE) rejeitou nesta terça-feira (11) um pedido do PT para investigar
-</p>
+    <h1 class="center"> Alura Typer </h1>
+    <p class="frase left-align">O Tribunal Superior Eleitoral (TSE) rejeitou nesta terça-feira (11) um pedido do PT para
+        investigar
+    </p>
 
-<ul class="informacoes center">
+    <ul class="informacoes center">
 
-    <li><i class="small material-icons icones">description</i><span id="quantidadepalavras"> 10 </span> palavras</li>
-    <li><i class="small material-icons icones">query_builder</i><span id="tempoRestante">10</span>  segundos</li>
-</ul>
+        <li><i class="small material-icons icones">description</i><span id="quantidadepalavras"> 10 </span> palavras
+        </li>
+        <li><i class="small material-icons icones">query_builder</i><span id="tempoRestante">10</span> segundos</li>
+    </ul>
 
-<textarea class="campodigitacao" rows="10" cols="40"></textarea>
-<button class="btn-floating btn-large waves-effect waves-light red" id="botaoReiniciar"><i class="material-icons">restore</i></button>
+    <textarea class="campodigitacao" rows="10" cols="40"></textarea>
+    <button class="btn-floating btn-large waves-effect waves-light red" id="botaoReiniciar"><i class="material-icons">restore</i>
+    </button>
 
-<ul class="center">
-    <li><span id="contador-caracteres">0</span> caracteres</li>
-    <li><span id="contador-palavras">0</span> palavras</li>
-</ul>
+    <ul class="center">
+        <li><span id="contador-caracteres">0</span> caracteres</li>
+        <li><span id="contador-palavras">0</span> palavras</li>
+    </ul>
+
+    <section class="placar"><h3 class="center">Placar</h3>
+        <table class="centered bordered">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Numero de Palavras</th>
+                <th>Remover</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+<script src="js/placar.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@ $(function () {
     inicializaContadores();
     inicializaCronometro();
     inicializaMarcadores();
+
     $("#botaoReiniciar").click(reiniciaJogo);
 
 });
@@ -38,6 +39,7 @@ function inicializaCronometro() {
                 campo.attr("disabled", true);
                 clearInterval(id);
                 campo.addClass("campodesabilitado");
+                inserePlacar();
             }
         }, 1000);
     });
@@ -74,6 +76,7 @@ function inicializaMarcadores(){
         }
     });
 }
+
 
 
 $("#botao-reiniciar").click(reiniciaJogo);
