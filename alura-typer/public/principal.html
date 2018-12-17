@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-<h1> Alura Typer </h1>
-<p class="frase">O Tribunal Superior Eleitoral (TSE) rejeitou nesta terça-feira (11) um pedido do PT para investigar
+<div class="container">
+<h1 class="center"> Alura Typer </h1>
+<p class="frase left-align">O Tribunal Superior Eleitoral (TSE) rejeitou nesta terça-feira (11) um pedido do PT para investigar
 </p>
 
-<ul class="informacoes">
-    <li><span id="quantidadepalavras"> 10 </span> palavras</li>
-    <li><span id="tempoRestante">10</span>  segundos</li>
+<ul class="informacoes center">
+
+    <li><i class="small material-icons icones">description</i><span id="quantidadepalavras"> 10 </span> palavras</li>
+    <li><i class="small material-icons icones">query_builder</i><span id="tempoRestante">10</span>  segundos</li>
 </ul>
 
 <textarea class="campodigitacao" rows="10" cols="40"></textarea>
-<button id="botaoReiniciar">Reinicia Jogo</button>
+<button class="btn-floating btn-large waves-effect waves-light red" id="botaoReiniciar"><i class="material-icons">restore</i></button>
 
-<ul>
+<ul class="center">
     <li><span id="contador-caracteres">0</span> caracteres</li>
     <li><span id="contador-palavras">0</span> palavras</li>
 </ul>
-
+</div>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 </body>
